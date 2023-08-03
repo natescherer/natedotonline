@@ -13,9 +13,17 @@ a {
   color: hotpink;
 }
 
+.nate-online {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  margin: 5%;
+}
+
 .nate {
   position: relative;
-  left: -200px;
+  left: -240px;
   font-family: 'Mr Dafoe', cursive;
   font-size: 200px;
   margin-bottom: 0;
@@ -29,14 +37,16 @@ a {
 }
 
 .online {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-family: 'Monoton', cursive;
   font-size: 200px;
   line-height: 1;
   margin: 0;
   margin-top: -95px; 
   padding-left: 80px;
+  padding-right: 80px;
   /* font-weight: normal; */
   background-image: -webkit-linear-gradient(#022486 0%, #0AD0FD 30%, #BDFCFC 40%, #D8FFFF 44%, #00081C 44%, #00081C 50%, #074A67 52%, #1CD8FE 60%, #7FEDFE 62%, #96F5FC 70%, #0FD8FA 73%, #0BD2FD 88%, #AFFDFF 100%); 
   -webkit-background-clip: text;
@@ -175,10 +185,11 @@ a {
 }
 
 .slogan {
+  white-space: nowrap;
   font-family: 'Roboto', sans-serif;
   font-size: 50pt;
   margin: 10 auto;
-  padding: 100px;
+  padding: 3vw;
 }
 
 .footer {
@@ -188,4 +199,32 @@ a {
   transform: translate(-50%, 0);
   font-family: 'Roboto Mono', monospace;
   font-size: 10pt;
+}
+
+@media screen and (max-width: 1000px) {
+  .nate-online {
+    scale: 0.6;
+  }
+
+  .slogan {
+    font-size: 20pt;
+  }
+
+  .footer {
+    font-size: 5pt;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nate-online {
+    scale: 0.3;
+  }
+
+  .slogan {
+    font-size: 20pt;
+  }
+
+  .footer {
+    font-size: 5pt;
+  }
 }
