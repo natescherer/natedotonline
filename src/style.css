@@ -31,8 +31,13 @@ a {
   -webkit-text-fill-color: rgb(229, 19, 226);
   text-shadow: -2px -2px 0 #6c105b;
   -webkit-filter: drop-shadow(3px 3px 1px #441F62);
+  -webkit-transform: skew(-5deg,-5deg);
   font-weight: normal;
   z-index: 2;
+  padding-left: 100px;
+  margin-left: -100px;
+  padding-right: 100px;
+  margin-right: -100px
 }
 
 .online {
@@ -193,7 +198,7 @@ a {
 
 .footer {
   position: fixed;
-  bottom: 0;
+  bottom: 1%;
   left: 50%;
   transform: translate(-50%, 0);
   font-family: 'Roboto Mono', monospace;
